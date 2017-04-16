@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+
+<html>
+<form action="inserted.php" method="post">
+<head>
+<title>ADD PROJECT</title>
+<style>
+	button:hover 
+		{
+			 background-color:#1E90FF;
+		}
+	input[type=submit]:hover {
+			background-color:#45a049;
+		}
+</style>
+
+<style>
+		input,select,button{
+			padding: 5px 8px;
+			margin: 4px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			background-color: #1E90FF;
+			color: white;
+			padding: 5px 8px;
+			margin: 4px 0;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color:#45a049;
+		}
+
+</style>
+
+<script src="validateform.js"></script>
+
+</head>
+<body>
+<form name="addprojform">
+<hr>
+<img src="dbit.png" alt="none" width="1350">
+<h1><center><i> Department Of Information Technology </i></center></h1>
+<style>
+	a{color:white;}
+</style>
+<hr>
+<br>
+<div style="background-color:black; color:black; height:75px; width:1350px; ">
+<nav>
+<center>
+<a href="addproject1.html">Add Project</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="list.php">List</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="approved.php">Approval</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+</nav>
+</div>
+</center>
+<br>
+<hr>
+<h1><center>ADD PROJECT</center></h1>
+<center>
+
+<table>
+	
+	<tr>
+
+		<td>Project Title </td>
+
+		<td>:</td>
+
+		<td><input type="text" placeholder="Enter a name" name="Ptitle" cols="27" required></td>
+
+	</tr>
+
+	
+<tr>
+
+		<td>Project Abstract </td>
+
+		<td>:</td>
+
+		<td>
+		   <textarea name="Pabs" rows="5" cols="27" required></textarea></td>
+
+		   
+	</tr>
+
+	
+<tr>
+
+		<td>Group Members</td>
+
+		<td>:</td>
+
+		<td>
+
+			<table border-collapse=collapse cellpadding="10" cellspacing="0" width="100%">
+
+		
+<tr>
+
+		<td colspan="1">1.<input type="text" placeholder="Enter your name" name="Name1" required>
+
+		</td>
+
+		</tr>
+
+
+		
+		<tr>	
+	
+	<td>2.<input type="text" placeholder="Enter your name" name="Name2">
+
+		</td>
+
+		</tr>
+
+
+		
+<tr>
+				
+		<td>3.<input type="text" placeholder="Enter your name" name="Name3">
+	
+		</td>
+	
+		</tr>
+
+		
+
+		<tr>
+		
+		<td>4.<input type="text" placeholder="Enter your name" name="Name4">
+		
+		</td>
+		
+		</tr>
+		
+			</table>
+
+		</td>
+
+	</tr>
+	
+
+</table>
+
+<br>
+
+<br>
+<table>
+
+	<tr>
+		<td>Project Guide</td>
+		<td>:</td>
+
+		<td>
+			<table>	
+			<select name="guide" style="max-width:80%";required>
+
+			<option value="no" selected="">--Select Your Guide--</option>
+			<option value="Janhavi Baikerikar">Janhavi Baikerikar</option>
+
+			<option value="Nilesh Ghavate">Nilesh Ghavate</option>
+		
+
+			<option value="Aruna Khubalkar">Aruna Khubalkar</option>
+		
+
+			<option value="Vaishali Kavathekar">Vaishali Kavathekar</option>
+	
+
+			<option value="Sushree Satapathy">Sushree Satapathy</option>
+
+			<option value="Tayyabali Sayyad">Tayyabali Sayyad</option>
+
+			<option value="Prasad Padalkar">Prasad Padalkar</option>
+
+			<option value="Shiv Negi">Shiv Negi</option>
+
+			<option value="Uday Nayak">Uday Nayak</option>
+
+			<option value="Anagha Shastri">Anagha Shastri</option>
+
+			<option value="Mahalaxmi Sridhar">Mahalaxmi Sridhar</option>
+
+			<option value="Sunantha Krishnan">Sunantha Krishnan</option>
+
+			</select>
+			</table>
+		</td>
+	</tr>
+</table>	
+
+<br>
+	
+
+<br>
+
+<br>
+	
+
+<button type="submit" value="Submit"  onclick="myFunction()">Submit</button> 
+<button type="reset" value="Reset">Reset</button><br></center>
+	
+
+
+
+</center>
+</form>	
+
+</body>
+
+</html>
